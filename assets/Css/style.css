@@ -162,7 +162,7 @@ nav a
 .start-footswear-end
 {
     font-weight: bold;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 
 .footswear-end 
@@ -188,7 +188,7 @@ nav a
     background-color: var(--primeColor);
     border-radius: 20px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
 
@@ -1487,10 +1487,19 @@ align-items: center;
     width: 100%;
     padding: 10px 20px;
     background-color: var(--mainColor);
-    color: var(--primeColor);
+    color: black;
     border-radius: 50px 20px;
     border: 2px solid black;
     cursor: pointer;
+}
+
+.my-LogModel .LogIn button:hover
+{
+    transform: scale(1.2);
+    transition: 1s;
+    background-color: rgba(0, 0, 0);
+    border-color: var(--mainColor);
+    color: var(--primeColor);
 }
 
 
@@ -1499,3 +1508,5 @@ align-items: center;
 {
     display: none;
 }
+
+

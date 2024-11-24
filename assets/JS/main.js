@@ -74,21 +74,81 @@ const swiper = new Swiper('.swiper', {
     }, 1000);
 
 
-const logModel = document.querySelector(".my-LogModel");
+    const modell = ()=> {
+                const logModel = document.querySelector(".my-LogModel");
+            
+                const logIn = document.querySelector(".backImage .end-nav .logIn"); 
+
+                const logInModal = document.querySelector(".my-LogModel .btn");
+
+
+                logIn.addEventListener("click", () => {
+
+                  logModel.classList.remove("displayNone");
+
+                  document.addEventListener("keydown", () => {
+                    
+                    if (event.key === "Escape") {
+                      logModel.classList.add("displayNone");
+                    }
+
+                  });
+                  
+                });
+
+                logInModal.addEventListener("click", () => {
+
+                  logModel.classList.add("displayNone");
+
   
-const logIn = document.querySelector(".backImage .end-nav .logIn"); 
-
-const logInModal = document.querySelector(".my-LogModel .btn");
-
-
-logIn.addEventListener("click", () => {
-
-  logModel.classList.remove("displayNone");
 
 });
 
-logInModal.addEventListener("click", () => {
 
-  logModel.classList.add("displayNone");
+    }
 
-});
+    modell();
+
+
+    const incIndex = ()=> {
+
+      const price = document.querySelector(".priceSum");
+      const ArrayPrice = Array.from(price);
+
+      console.log(ArrayPrice);
+      
+
+
+
+      let index = 0;
+      const cart = document.querySelectorAll(".Cart");
+      const ArrayCart = Array.from(cart);
+
+
+
+
+
+
+      ArrayCart.forEach((item) => {
+        item.addEventListener("click", () => {
+
+          document.querySelector(".footswear .footswear-end .number ").textContent = ++index ;
+          document.querySelector(".footswear .footswear-end .sum").textContent = ++ArrayPrice[item.index];
+
+      });
+
+     
+
+
+
+
+
+    });
+
+
+      
+
+    }
+    incIndex();
+
+    
