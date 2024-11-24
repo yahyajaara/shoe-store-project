@@ -73,3 +73,22 @@ const swiper = new Swiper('.swiper', {
         timerr();
     }, 1000);
 
+
+const logModel = document.querySelector(".my-LogModel");
+  
+const logIn = document.querySelector(".backImage .end-nav .logIn"); 
+
+const logInModal = document.querySelector(".my-LogModel .btn");
+
+
+logIn.addEventListener("click", () => {
+
+  logModel.classList.remove("displayNone");
+
+});
+
+logInModal.addEventListener("click", () => {
+
+  logModel.classList.add("displayNone");
+
+});
