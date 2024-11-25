@@ -457,10 +457,19 @@ h1 span
 
 }
 
+
+
 .Description-Shose .Cart:hover
 {
     background-color: rgba(0, 0, 0);
     color: var(--primeColor); 
+}
+
+.Description-Shose .Cart:active
+{
+    background-color: var(--mainColor);
+    transform: scale(1.2);
+    transition: 0.4s;
 }
 
 
@@ -1508,5 +1517,6 @@ align-items: center;
 {
     display: none;
 }
+
 
 

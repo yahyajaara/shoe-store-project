@@ -112,10 +112,11 @@ const swiper = new Swiper('.swiper', {
 
     const incIndex = ()=> {
 
-      const price = document.querySelector(".priceSum");
+      const price = document.querySelectorAll(".priceSum");
+
       const ArrayPrice = Array.from(price);
 
-      console.log(ArrayPrice);
+      console.log(price);
       
 
 
@@ -123,10 +124,6 @@ const swiper = new Swiper('.swiper', {
       let index = 0;
       const cart = document.querySelectorAll(".Cart");
       const ArrayCart = Array.from(cart);
-
-
-
-
 
 
       ArrayCart.forEach((item) => {
@@ -139,16 +136,11 @@ const swiper = new Swiper('.swiper', {
 
      
 
-
-
-
-
     });
 
 
-      
-
     }
     incIndex();
+
 
     
