@@ -35,6 +35,10 @@ html
    height: 750px;
    
 }
+.backImage nav
+{
+    margin-bottom: 20px;
+}
 
 nav .navbar-brand , .nav-link 
 {
@@ -67,22 +71,41 @@ nav a
 }
 
 
+
+
 .My-row
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
-    margin-top: 60px;
     padding: 30px;
     background-color: var(--mainColor);;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 60px;
-    height: auto;
-
+    
 }
+
+.hiddenNav
+{
+    transform: translateY(-100%);
+    
+}
+
+.ScrollNav
+{
+    position: fixed;
+    top:0 ;
+    right: 100px;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+
 
 .footswear
 {
@@ -91,19 +114,13 @@ nav a
 
 .footswear .My-row
 {
-    margin-top: 20px;
     width: 100%;
-    justify-content: space-between;
     padding: 0px;
     height: 90px;
     
 }
 
-.my-container
-{
-    padding: 0px;
-    margin: 0 auto;
-}
+
 
 
 .footswear .nav-link 
@@ -218,7 +235,7 @@ nav a
 
 .headerSlider
 {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .headerSlider .carousel-item
@@ -1491,7 +1508,7 @@ align-items: center;
     margin-bottom: 10px;
 }
 
-.my-LogModel .LogIn button
+.my-LogModel .LogIn .loginn
 {
     width: 100%;
     padding: 10px 20px;
@@ -1511,12 +1528,72 @@ align-items: center;
     color: var(--primeColor);
 }
 
+.my-LogModel .LogIn .btn-close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.my-LogModel .LogIn .btn-close:hover
+{
+
+    background-color: var(--mainColor);
+}
+
+
 
 
 .displayNone
 {
     display: none;
 }
+
+
+
+
+.hidden {
+    opacity: 0;
+    transform:translateY(100px);
+    
+    transition: opacity 1s ease-out, transform 1.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.back-to-top 
+{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color:var(--mainColor);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+
+  .back-to-top:hover 
+  {
+    background-color: rgba(0, 0, 0);
+    transform: scale(1.1);
+  }
+  
 
 
 
